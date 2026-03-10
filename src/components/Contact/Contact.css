@@ -372,3 +372,22 @@
     padding: 2rem;
   }
 }
+.map-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 20px;
+}
+
+.map-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #c88b8b;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
