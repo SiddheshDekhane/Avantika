@@ -98,7 +98,7 @@ const Contact = () => {
       <div className="map-section">
         <h2>Find Us</h2>
         <div className="map-placeholder">
-          <p>📍 Located at Dr. Ambedkar Road, Vikas Palm, Satara</p>
+          <p>📍 Located at Dr. Ambedkar Road, Vikas Palm, Thane</p>
           <p>Contact us for exact directions</p>
         </div>
       </div>
