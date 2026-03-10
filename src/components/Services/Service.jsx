@@ -9,66 +9,69 @@ const Service = () => {
       name: 'Makeup',
       description: 'Professional makeup services for all occasions',
       details: [
-        'Bridal Makeup: ₹3000-5000',
-        'Party Makeup: ₹1500-2500',
-        'Daily Makeup: ₹500-1000',
-        'Eye Makeup: ₹300-500'
+        'HD Makeup: ₹5000',
+        '3D Makeup: ₹5000',
+        'Party Makeup: ₹2000',
+        'Traditional Makeup: ₹1500',
+        'Western Makeup: ₹2000',
+        'Bridal Makeup: Price on consultation'
       ]
     },
     {
       id: 2,
       name: 'Skin Care',
-      description: 'Comprehensive skincare treatments',
+      description: 'Complete skincare treatments for glowing skin',
       details: [
-        'Facial: ₹800-1500',
-        'Cleanup: ₹300-500',
-        'Bleach: ₹400-700',
-        'Threading: ₹100-200',
-        'Skin Treatment: ₹1000-2000'
+        'Facial: ₹350',
+        'Cleanup: ₹250',
+        'Pimple Treatment: ₹500'
       ]
     },
     {
       id: 3,
-      name: 'Hair Styles',
-      description: 'Trendy and elegant hair styling',
+      name: 'Hair Treatment',
+      description: 'Professional hair care and treatment services',
       details: [
-        'Bridal Hair Style: ₹1500-2500',
-        'Party Style: ₹800-1500',
-        'Regular Style: ₹300-800',
-        'Hair Spa: ₹800-1500'
+        'Hair Smoothing',
+        'Keratin Treatment',
+        'Hair Spa',
+        'Hair Oil Massage',
+        'Dandruff Treatment'
       ]
     },
     {
       id: 4,
-      name: 'Hair Cuts',
-      description: 'Professional haircuts for all ages',
+      name: 'Haircut',
+      description: 'Modern and stylish haircuts',
       details: [
-        'Women Hair Cut: ₹400-800',
-        'Kids Hair Cut: ₹200-400',
-        'Layer Cut: ₹600-1000',
-        'Styling with Cut: ₹800-1500'
+        'Butterfly Cut',
+        'Long Hair Cut',
+        'Short Layer Cut',
+        'Feather Cut',
+        'Blunt Cut',
+        'Layer Bob',
+        'Pixie Cut',
+        'Step Cut'
       ]
     },
     {
       id: 5,
-      name: 'Nail Care',
-      description: 'Nail art and care services',
+      name: 'Baby Haircut',
+      description: 'Special haircuts for kids',
       details: [
-        'Manicure: ₹300-600',
-        'Pedicure: ₹400-700',
-        'Nail Art: ₹500-1000',
-        'Gel Nails: ₹800-1500'
+        'Round Cut',
+        'Mushroom Cut',
+        'Apple Cut',
+        'Baby Boy Cut'
       ]
     },
     {
       id: 6,
-      name: 'Hair Color',
+      name: 'Hair Colour & Highlights',
       description: 'Professional hair coloring services',
       details: [
-        'Full Color: ₹1500-3000',
-        'Roots Touch-up: ₹1000-1500',
-        'Highlights: ₹1500-2500',
-        'Hair Treatment: ₹1000-2000'
+        'Hair Colour',
+        'Hair Highlights'
       ]
     }
   ];
@@ -78,15 +81,21 @@ const Service = () => {
       <Banner />
       <div className="services-container">
         <h1>Our Services</h1>
-        <p className="services-intro">Sarika Parlour offers a wide range of beauty and grooming services</p>
+        <p className="services-intro">
+      Avantika Parlour offers a wide range of beauty and grooming services
+        </p>
+
         <div className="service-options">
           {services.map((service) => (
             <div className="option-card" key={service.id}>
               <h3>{service.name}</h3>
               <p className="service-description">{service.description}</p>
+
               <div className="service-details">
                 {service.details.map((detail, index) => (
-                  <div key={index} className="detail-item">{detail}</div>
+                  <div key={index} className="detail-item">
+                    {detail}
+                  </div>
                 ))}
               </div>
             </div>

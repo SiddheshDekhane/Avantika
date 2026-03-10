@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="contact-container">
       <div className="contact-header">
         <h1>Contact Us</h1>
-        <p>Get in touch with Sarika Parlour</p>
+        <p>Get in touch with Avantika Parlour</p>
       </div>
 
       <div className="contact-content">
@@ -24,9 +24,9 @@ const Contact = () => {
             <div className="info-icon">📍</div>
             <h3>Address</h3>
             <p>
-              Dr. Ambedkar Road Side<br />
+              Dr. Ambedkar Road BeSide<br />
               Vikas Palm<br />
-              Satara<br />
+              Thane<br />
               Maharashtra, India
             </p>
           </div>
